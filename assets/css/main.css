@@ -91,10 +91,10 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #7f888f;
+  color: #60686e;
   font-family: "Open Sans", sans-serif;
-  font-size: 13pt;
-  font-weight: 400;
+  font-size: 15pt;
+  font-weight: 425;
   line-height: 1.65; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
@@ -1218,7 +1218,16 @@ input[type="radio"] + label:before {
   position: relative; }
   .image img {
     border-radius: 0.375em;
-    display: block; }
+    display: block;}
+
+  .image img.resize {
+    border-radius: 0.375em;
+    border: 0;
+    position: relative;
+    float: right;
+    max-height: 75%;
+    max-width: 75%;
+    }
   .image.left, .image.right {
     max-width: 40%; }
     .image.left img, .image.right img {
@@ -1230,7 +1239,7 @@ input[type="radio"] + label:before {
   .image.right {
     float: right;
     padding: 0 0 1em 1.5em;
-    top: 0.25em; }
+    top: 0.25em;}
   .image.fit {
     display: block;
     margin: 0 0 2em 0;
